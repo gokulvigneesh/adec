@@ -1,5 +1,5 @@
 import { useState } from "react";
-import think from './image/think.png'
+import think1 from './image/think1.png'
 import our1 from './image/our1.png'
 import our2 from './image/our2.png'
 import skill1 from './image/skill1.png'
@@ -94,7 +94,7 @@ export default function Story(){
                 </div>
               </div>
               <div className="w-[30%] flex justify-center items-center ">
-                <img alt="" src={think} />
+                <img alt="" src={think1} />
               </div>
             </div>
           </div>
