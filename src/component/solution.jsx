@@ -17,8 +17,6 @@ export default function Solution(){
       const bgColor1 = isLightMode ? 'bg-customgrey' : 'bg-black';
       const bgColor2 = isLightMode ? 'bg-custompurple' : 'bg-customblue';
       const textColor = isLightMode ? 'text-black' : 'text-white';
-      const textColor1 = isLightMode ? 'text-white' : 'text-black';
-      const textColor2 = isLightMode ? 'text-white' : 'text-customblue';
       const image = isLightMode ? Logo1 : Logo;
 
       return(
@@ -74,8 +72,8 @@ export default function Solution(){
           <div className="h-[45%] w-[30%] bg-customblue absolute top-[230px] left-[700px] rounded-lg ">
          <div className={`h-[300px] w-[400px] bg-white absolute top-[-20px] left-[-30px] rounded-lg  ${bgColor2} `}>
          <div className='justify-center items-center text-center mt-[45px]'>
-            <h3 className={`inline text-xl  ${textColor2}`}>DATA ANALTICS</h3>
-            <p className= {`flex pt-8 antialiased p-5 ${textColor1}`}>Our Data Analytics solutions enable businesses to derive valuable insights from complex data sets, facilitating data-driven decision-making. Unlock the power of data with our solutions by optimizing marketing efforts, and identifying cost-saving initiatives.</p>
+            <h3 className={`inline text-xl  text-customblue`}>DATA ANALTICS</h3>
+            <p className= {`flex pt-8 antialiased p-5 text-black`}>Our Data Analytics solutions enable businesses to derive valuable insights from complex data sets, facilitating data-driven decision-making. Unlock the power of data with our solutions by optimizing marketing efforts, and identifying cost-saving initiatives.</p>
          </div>
          </div>
          </div>
@@ -83,8 +81,8 @@ export default function Solution(){
          <div className="h-[350px] w-[330px] bg-customblue absolute top-[630px] left-[500px] rounded-lg ">
          <div className={`h-[350px] w-[330px] bg-white absolute top-[-21px] left-[-21px] rounded-lg  ${bgColor2} `}>
          <div className='justify-center items-center text-center mt-[45px]'>
-            <h3 className={`inline text-xl  ${textColor2}`}>CUSTOM SOFTWARE DEVELOPMENT</h3>
-            <p className= {`flex pt-8 text-base p-5 ${textColor1}`}>Our custom software solution includes IoT integration platform and IT assets therefore making web and mobile app along with no-code development an easy feat. With ADEC, leverage technology solutions for maximum efficiency.</p>
+            <h3 className={`inline text-xl text-customblue`}>CUSTOM SOFTWARE DEVELOPMENT</h3>
+            <p className= {`flex pt-8 text-base p-5 text-black`}>Our custom software solution includes IoT integration platform and IT assets therefore making web and mobile app along with no-code development an easy feat. With ADEC, leverage technology solutions for maximum efficiency.</p>
          </div>
          </div>
          </div>
@@ -92,8 +90,8 @@ export default function Solution(){
          <div className="h-[330px] w-[310px] bg-customblue absolute top-[730px] left-[900px] rounded-lg ">
          <div className={`h-[330px] w-[310px] bg-white absolute top-[-21px] left-[-21px] rounded-lg  ${bgColor2} `}>
          <div className='justify-center items-center text-center mt-[45px]'>
-            <h3 className={`inline text-xl  ${textColor2}`}>DIGITAL MARKETING</h3>
-            <p className= {`flex pt-8 text-base p-5 ${textColor1}`}>Our Digital Marketing solutions and Programmatic Advertising services, increases your brand visibility, widen your scope for target audience and optimize your cost with our customized marketing initiatives thereby maximizing your omnichannel presence.</p>
+            <h3 className={`inline text-xl text-customblue`}>DIGITAL MARKETING</h3>
+            <p className= {`flex pt-8 text-base p-5 text-black`}>Our Digital Marketing solutions and Programmatic Advertising services, increases your brand visibility, widen your scope for target audience and optimize your cost with our customized marketing initiatives thereby maximizing your omnichannel presence.</p>
          </div>
          </div>
          </div>
