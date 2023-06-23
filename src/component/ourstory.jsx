@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Logo1 from './image/Logo1.png';
-import Logo from './image/Logo.png';
 import think from './image/think.png'
 import our1 from './image/our1.png'
 import our2 from './image/our2.png'
@@ -12,9 +10,13 @@ import innovation1 from './image/innovation1.png'
 import innovation2 from './image/innovation2.png'
 import adapt1 from './image/adapt1.png'
 import adapt2 from './image/adapt2.png'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Footer from './footer'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import Logo1 from './image/Logo1.png';
+import Logo from './image/Logo.png';
+
 
 export default function Story(){
     const [isLightMode, setIsLightMode] = useState(false); 
@@ -26,45 +28,50 @@ export default function Story(){
   const bgColor = isLightMode ? 'bg-white' : 'bg-customblue';
   const bgColor1 = isLightMode ? 'bg-customgrey' : 'bg-black';
   const textColor = isLightMode ? 'text-black' : 'text-white';
-  const image = isLightMode ? Logo1 : Logo;
   const image1 = isLightMode ? our2 : our1;
   const image2 = isLightMode ? skill2 : skill1;
   const image3 = isLightMode ? client2 : client1;
   const image4 = isLightMode ? innovation2 : innovation1;
   const image5 = isLightMode ? adapt2 : adapt1;
+  const image = isLightMode ? Logo1 : Logo;
     return(
-        <Router>
+        <>
         <div className={`h-screen overflow-hidden ${bgColor}`}>
+        <Link to="/head" className="h-5 w-5">
         <img
-          className={`object-cover object-center h-15 w-15 mt-12 sm:mt-20 ml-12 sm:ml-20 `}
-          src={image}
-          alt="Logo"
-        />
-        
-        <div
-          className={`bg-blue-500 text-white py-2 px-4 rounded-full flex items-center justify-center w-4 h-8 absolute top-2 right-2 md:top-20 md:right-16 ${textColor}`}
-          onClick={toggleMode}
-        >
-          {isLightMode ? (
-            <FontAwesomeIcon icon={faSun} className="text-xl" />
-          ) : (
-            <FontAwesomeIcon icon={faMoon} className="text-xl" />
-          )}
-        </div>
-      
-        <div>
-          <ul className={`flex absolute top-2 md:top-20 right-2 md:right-24 ${textColor}`}>
-            <li className="mx-2 md:mx-4">
-              <Link to="">Our Story</Link>
-            </li>
-            <li className="mx-2 md:mx-4">
-              <Link to="/solution">Solution</Link>
-            </li>
-            <li className="mx-2 md:mx-4">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
+             className={`object-cover  h-15 w-15 mt-20  ml-20 `}
+             src={image}
+             alt="Logo" 
+           
+             />
+         </Link>   
+
+         <div
+                 className={`bg-blue-500 text-white py-2 px-4 rounded-full flex items-center justify-center w-4 h-8 absolute top-2 right-2 md:top-20 md:right-16 ${textColor}`}
+                 onClick={toggleMode}
+             >
+                 {isLightMode ? (
+                     <FontAwesomeIcon icon={faSun} className="text-xl" />
+                 ) : (
+                     <FontAwesomeIcon icon={faMoon} className="text-xl" />
+                 )}
+             </div>
+            
+             
+             <div>
+                 <ul className={`flex absolute top-2 md:top-20 right-2 md:right-24 ${textColor}`}>
+                     <li className="mx-2 md:mx-4">
+                         <Link to="/ourstory">Our Story</Link>
+                     </li>
+                     <li className="mx-2 md:mx-4">
+                         <Link to="/solution">Solution</Link>
+                     </li>
+                     <li className="mx-2 md:mx-4">
+                         <Link to="/contact">Contact</Link>
+                     </li>
+                 </ul>
+             </div> 
+       
         <div className={`absolute top-80 left-96 tracking-wider ${textColor}`}>
            <p className="flex justify-center items-center text-center text-4xl">DEDICATED TEAMS</p>
            <p className="flex justify-center items-center text-center text-4xl">FOR YOUR DEDICATED DREAMS</p>
@@ -195,7 +202,8 @@ export default function Story(){
             </div>
           </div>
       </div>
+      <Footer/>
      
-      </Router>
+      </>
     );
 }

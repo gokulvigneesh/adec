@@ -5,7 +5,8 @@ module.exports = {
       colors: {
         customblue: "#4E31AA",
         custompurple:"#3E54AC",
-        customgrey:"#DDE6ED"
+        customgrey:"#DDE6ED",
+        customblack:"#454545"
       },
     },
   },
