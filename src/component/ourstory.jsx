@@ -72,7 +72,7 @@ export default function Story(){
                  </ul>
              </div> 
        
-        <div className={`absolute top-80 left-96 tracking-wider ${textColor}`}>
+        <div className={`absolute top-80 left-[500px] tracking-wider ${textColor}`}>
            <p className="flex justify-center items-center text-center text-4xl">DEDICATED TEAMS</p>
            <p className="flex justify-center items-center text-center text-4xl">FOR YOUR DEDICATED DREAMS</p>
         </div>
@@ -107,7 +107,7 @@ export default function Story(){
               <div className="w-[60%] flex justify-center relative bottom-48 left-[32rem]">
             <div className=" flex items-center justify-center">
               <div className="p-7 max-w-[800px] mb-20">
-                <h2 className={`uppercase font-[500] mb-5 text-[26px] uppercase pt-6 ${textColor}`}>
+                <h2 className={`uppercase font-[500] mb-5 text-[26px]  pt-6 ${textColor}`}>
                   Technological Expertise
                 </h2>
                 <p className={`${textColor}`}>
@@ -122,13 +122,13 @@ export default function Story(){
               </div>
             </div>
           </div>
-          <div className={`ml-[54rem] mt-[-10rem] `}>
+          <div className={`ml-[65rem] mt-[-10rem] `}>
                 <img alt="" src={image2} />
               </div>
               <div className="w-[60%] flex justify-center relative bottom-48 left-1">
             <div className=" flex items-center justify-center">
               <div className="p-7 max-w-[800px] mb-20">
-                <h2 className={`uppercase font-[500] mb-5 text-[26px] uppercase pt-6 ${textColor}`}>
+                <h2 className={`uppercase font-[500] mb-5 text-[26px]  pt-6 ${textColor}`}>
                 SKILLED WORKFORCE
                 </h2>
                 <p className={`${textColor}`}>
@@ -161,13 +161,13 @@ export default function Story(){
               </div>
             </div>
           </div>
-          <div className={`ml-[54rem] mt-[-10rem] `}>
+          <div className={`ml-[65rem] mt-[-10rem] `}>
                 <img alt="" src={image4} />
               </div>
               <div className="w-[60%] flex justify-center relative bottom-48 left-1">
             <div className=" flex items-center justify-center">
               <div className="p-7 max-w-[800px] mb-20">
-                <h2 className={`uppercase font-[500] mb-5 text-[26px] uppercase pt-6 ${textColor}`}>
+                <h2 className={`uppercase font-[500] mb-5 text-[26px]  pt-6 ${textColor}`}>
                 INNOVATION
                 </h2>
                 <p className={`${textColor}`}>

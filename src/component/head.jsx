@@ -84,7 +84,7 @@ export default function Head() {
         <p className={`indent-4 sm:indent-8 pt-20 pl-4 sm:pl-32  text-2xl ${textColor}`}>
           <span className="text-custompurple">A</span>bout Us
         </p>
-        <p className={` pt-2 pl-4 sm:pl-20  text-lg sm:text-xl pt-5 sm:pt-20 ${textColor}`}>
+        <p className={` pt-2 pl-4 sm:pl-20  text-lg sm:text-xl  sm:pt-20 ${textColor}`}>
           ADEC provides tailor-made consulting
         </p>
         <p className={`pt-2 pl-4 sm:pl-20  text-lg sm:text-xl ${textColor}`}>
@@ -101,13 +101,13 @@ export default function Head() {
       <div className='h-80 bg-customgrey'>
         <p className='text-center text-2xl pt-5'><span className="text-customblue">C</span>lientele</p>
         <p className='text-center pt-2'>Propel your business towards new horizons with Adec Presenting a list of our clientele</p>
-        <div className='bg-white w-20 sm:w-60 h-28 absolute left-8 sm:left-52 bottom-[-56rem]'>
-          <img className='mx-auto my-8 flex' src={Tech} alt="" />
+        <div className='bg-white w-60 h-28 absolute left-[230px] top-[1550px] '>
+          <img className='mx-auto my-8 flex relative ' src={Tech} alt="" />
         </div>
-        <div className='bg-white w-20 sm:w-60 h-28 absolute left-[11rem] sm:left-[33rem] bottom-[-56rem]'>
+        <div className='bg-white w-60 h-28 absolute left-[600px] top-[1550px]'>
           <img className='mx-auto my-8 flex' src={fixigo} alt="" />
         </div>
-        <div className='bg-white w-20 sm:w-60 h-28 absolute right-8 sm:left-[52rem] bottom-[-56rem]'>
+        <div className='bg-white w-60 h-28 absolute left-[950px] top-[1550px]'>
           <img className='mx-auto my-8 flex' src={jarvison} alt="" />
         </div>
       </div>

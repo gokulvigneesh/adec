@@ -70,7 +70,7 @@ export default function Contact(){
         <>
         <div className={`h-[900px] overflow-hidden opacity-80 ${bgColor1}`}> 
 
-            <Link to="/head" className="h-5 w-5">
+            <Link to="/head">
                <img
                className={`object-cover  h-15 w-15 mt-20  ml-20 `}
                src={image}
@@ -116,24 +116,22 @@ export default function Contact(){
                     placeholder="Enter your name "
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-[35%] border p-4 absolute right-[684px] top-[350px]  rounded-xl"               
+                    className="w-[25%] border p-4 absolute left-[175px] top-[350px]  rounded-xl"               
                 
                 />
-                     {errors.name && <p className="text-white absolute top-[420px] ml-[2.5rem]">{errors.name}</p>}
+                     {errors.name && <p className="text-customered absolute top-[420px] ml-[2.5rem]">{errors.name}</p>}
 
               <input 
                 type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-[35%] border p-4 absolute right-[684px] top-[450px] rounded-xl"  
+                className="w-[25%] border p-4 absolute left-[175px] top-[450px] rounded-xl"  
               />
-              <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded absolute right-[870px] top-[650px]">
-                Submit
-              </button>
+             
            
          
-              {errors.email && <p className="text-white mt-2 absolute top-[510px] ml-[2.5rem]">{errors.email}</p>}
+              {errors.email && <p className="text-customered mt-2 absolute top-[510px] ml-[2.5rem]">{errors.email}</p>}
 
             <input
           type="date"
@@ -141,18 +139,22 @@ export default function Contact(){
           value={date}
           placeholder="dd/mm/yy"
           onChange={(e) => setDate(e.target.value)}
-          className="w-[15%] border p-4 absolute right-[684px] top-[550px] rounded-xl"  
+          className="w-[10%] border p-4 absolute left-[395px] top-[550px] rounded-xl"  
         />
-         {errors.date && <p className="text-white mt-2 absolute top-[610px] ml-[298px]">{errors.date}</p>}
+         {errors.date && <p className="text-customered mt-2 absolute top-[610px] ml-[298px]">{errors.date}</p>}
 
          <input
           type="time"
           id="time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
-          className="w-[15%] border p-4 absolute right-[940px] top-[550px] rounded-xl"  
+          className="w-[10%] border p-4 absolute left-[175px] top-[550px] rounded-xl"  
         />
-        {errors.time && <p className="text-white mt-2 absolute top-[610px] ml-[2.5rem]">{errors.time}</p>}
+        {errors.time && <p className="text-customered mt-2 absolute top-[610px] ml-[2.5rem]">{errors.time}</p>}
+
+        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded absolute left-[320px] top-[650px]">
+                Submit
+              </button>
          </div>
           </form>
              </div>

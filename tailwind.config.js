@@ -6,7 +6,8 @@ module.exports = {
         customblue: "#4E31AA",
         custompurple:"#3E54AC",
         customgrey:"#DDE6ED",
-        customblack:"#454545"
+        customblack:"#454545",
+        customered:"#B70404"
       },
     },
   },
